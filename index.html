@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b18">
+  <meta name="description" content="A little birthday universe, made with love.">
+  <title>For Her · A Birthday Universe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar glass">
+    <a class="brand" href="#home"><span class="brand-mark">✦</span> a little universe</a>
+    <nav aria-label="Main navigation">
+      <a href="#countdown">Countdown</a><a href="#age">Age</a><a href="#moon">Moon</a><a href="#memories">Memories</a><a href="#wishes">Wishes</a>
+    </nav>
+    <a class="top-heart" href="#wishes" aria-label="Leave a wish">♡</a>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="sparkle">✧</span> A DAY THAT DESERVES ITS OWN UNIVERSE</p>
+        <p class="date-line" id="birthday-date-line">02 · 02 · 2006 — a Thursday, under a young moon</p>
+        <h1>Happy birthday,<br><em id="hero-name">Her</em><span class="period">.</span></h1>
+        <p class="hero-description">Every second you've been here is being counted below, the sky from your birthday is drawn in silver, and there's a soft song waiting for the play button. Scroll slowly.</p>
+        <div class="hero-actions">
+          <button class="button button-primary" id="music-toggle">♫ <span>Play her song</span></button>
+          <a class="button button-quiet" href="#memories">See the memories <span>↗</span></a>
+        </div>
+        <div class="turning-note"><span class="tiny-orbit">✧</span><span><b id="turning-age">21</b> turning next</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="moon-disc"><div class="moon-shadow"></div><span class="moon-star star-a">✦</span><span class="moon-star star-b">·</span></div>
+        <div class="art-caption"><span>made of stardust</span><span>✧  forever</span></div>
+      </div>
+      <div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="section-wrap content-section" id="countdown">
+      <div class="section-kicker">01 — REAL-TIME COUNTDOWN</div>
+      <div class="section-heading"><div><h2>Until she turns <em id="countdown-age">21</em></h2><p>Counting down to <span id="next-birthday-label">02 February 2027</span>, midnight your time.</p></div><span class="section-icon">⌁</span></div>
+      <div class="count-grid">
+        <div class="count-card glass"><strong id="days">---</strong><span>days</span></div>
+        <div class="count-card glass"><strong id="hours">--</strong><span>hours</span></div>
+        <div class="count-card glass"><strong id="minutes">--</strong><span>minutes</span></div>
+        <div class="count-card glass"><strong id="seconds">--</strong><span>seconds</span></div>
+      </div>
+      <div class="progress-panel glass"><div class="progress-top"><span>Year progress to her day</span><b id="year-progress">--%</b></div><div class="progress-track"><span id="progress-fill"></span></div><div class="progress-bottom"><span id="since-birthday">Since her last birthday</span><span><b id="heartbeats">—</b> heartbeats until then, roughly</span></div></div>
+    </section>
+
+    <section class="section-wrap content-section" id="age">
+      <div class="section-kicker">02 — AGE CALCULATOR</div>
+      <div class="section-heading"><div><h2>She has been wonderful <em>for…</em></h2><p>A tiny celebration of every moment that made her, her.</p></div><span class="section-icon">◷</span></div>
+      <div class="age-layout">
+        <div class="age-main glass"><div class="age-years"><strong id="age-years">--</strong><span>years</span></div><div class="age-sub"><span id="age-months">-- months</span><span id="age-days">-- days</span></div><div class="live-clock" id="live-clock">--:--:--</div><small>…and still ticking, live.</small></div>
+        <div class="age-stats">
+          <div class="stat-card glass"><b id="days-lived">—</b><span>days lived</span></div><div class="stat-card glass"><b id="hours-lived">—</b><span>hours</span></div>
+          <div class="stat-card glass"><b id="minutes-lived">—</b><span>minutes</span></div><div class="stat-card glass"><b id="seconds-lived">—</b><span>seconds, and counting</span></div>
+          <div class="stat-card glass"><b id="full-moons">—</b><span>full moons seen · approx.</span></div><div class="stat-card glass"><b id="sun-trips">—</b><span>trips around the sun</span></div>
+        </div>
+      </div>
+      <div class="date-picker glass"><div><b>How old will she be on…</b><p>Pick any date to see her exact age then.</p></div><input type="date" id="future-date"><strong id="future-age">Choose a date ↗</strong></div>
+    </section>
+
+    <section class="section-wrap content-section" id="moon">
+      <div class="section-kicker">03 — THE BIRTHDAY MOON</div>
+      <div class="section-heading"><div><h2>The sky on <em id="moon-date-label">02 Feb</em></h2><p>Slide through the hours of that day and see the moon's little story.</p></div><span class="section-icon">☾</span></div>
+      <div class="moon-layout glass">
+        <div class="moon-visual"><div class="moon-large" id="moon-visual-disc"></div><p id="moon-phase-visual">A little moon magic</p></div>
+        <div class="moon-details">
+          <label class="range-label" for="moon-hour">Hour on her birthday <output id="hour-output">21:00</output></label>
+          <input type="range" id="moon-hour" min="0" max="23" value="21">
+          <div class="moon-facts"><div><span>Phase</span><b id="moon-phase">—</b></div><div><span>Illuminated</span><b id="moon-light">—</b></div><div><span>Moon age</span><b id="moon-age">—</b></div><div><span>Distance from Earth</span><b id="moon-distance">—</b></div><div><span>Moon in</span><b id="moon-sign">—</b></div><div><span>Next full moon</span><b id="next-full">—</b></div><div><span>Next new moon</span><b id="next-new">—</b></div><div><span>On the night she was born</span><b id="birth-moon-phase">—</b></div></div>
+          <small class="muted">Lunar phase and illumination are estimated with standard browser-side formulas; values are approximate.</small>
+        </div>
+      </div>
+      <div class="wish-candles glass"><div><span class="section-kicker">A LITTLE BIRTHDAY RITUAL</span><h3>Make a wish,<br><em>then tap each flame.</em></h3><p>Five tiny lights for all the beautiful things still to come.</p><button class="button button-quiet" id="relight">Light them again ↗</button></div><div class="candles" id="candles"><button class="candle lit" aria-label="Blow out candle 1"><i></i><span></span></button><button class="candle lit" aria-label="Blow out candle 2"><i></i><span></span></button><button class="candle lit" aria-label="Blow out candle 3"><i></i><span></span></button><button class="candle lit" aria-label="Blow out candle 4"><i></i><span></span></button><button class="candle lit" aria-label="Blow out candle 5"><i></i><span></span></button></div></div>
+    </section>
+
+    <section class="section-wrap content-section" id="memories">
+      <div class="section-kicker">04 — MEMORIES</div>
+      <div class="section-heading"><div><h2>Photos, mini videos <em>& songs</em></h2><p>Add pictures, short clips and music to this little collection.</p></div><button class="button button-primary" id="add-memory">＋ Add a memory</button></div>
+      <div class="filter-row"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="image">Photos</button><button class="filter" data-filter="video">Mini videos</button><button class="filter" data-filter="audio">Music</button></div>
+      <div class="memory-grid" id="memory-grid"><div class="empty-state glass"><span>✧</span><h3>Nothing here yet</h3><p>Be the first to drop in a photo, a little video or the song that reminds you of her.</p><button class="button button-quiet" id="add-first">Add the first one ↗</button></div></div>
+      <p class="storage-note">Memories are saved in this browser on this device. For shared uploads across all visitors, connect a cloud database/storage service.</p>
+    </section>
+
+    <section class="section-wrap content-section wishes-section" id="wishes">
+      <div class="section-kicker">05 — WISHES</div>
+      <div class="wishes-layout"><div><h2>Leave her <em>a note.</em></h2><p>Little words can become the biggest memories.</p><div class="wish-decoration">“</div></div>
+        <form class="wish-form glass" id="wish-form"><label>Your name<input id="wish-name" maxlength="40" placeholder="Someone who cares…" required></label><label>Your wish<textarea id="wish-text" rows="4" maxlength="400" placeholder="Write something lovely…" required></textarea></label><button class="button button-primary" type="submit">Send with love ♡</button></form>
+      </div>
+      <div class="wish-list" id="wish-list"></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="footer-star">✦</div><p>Made with a lot of care for <span id="footer-name">Her</span> · <span id="footer-date">02 · 02</span></p><small>from <b id="signature">GK Gks</b>, with love.</small><a href="#home">Back to the stars ↑</a></footer>
+
+  <dialog id="memory-dialog" class="modal glass"><form method="dialog"><button class="modal-close" aria-label="Close">×</button></form><p class="section-kicker">ADD A MEMORY</p><h3>Keep this moment.</h3><form id="memory-form"><label class="drop-zone"> <span>＋</span><b>Choose photos, mini videos or songs</b><small>Up to 4.5 MB each · stored in this browser</small><input type="file" id="memory-files" accept="image/*,video/*,audio/*" multiple required></label><label>Caption (optional)<input id="memory-caption" maxlength="100" placeholder="Beach day, summer '24"></label><button class="button button-primary" type="submit">Add to memories</button></form></dialog>
+  <audio id="birthday-audio" loop></audio>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
